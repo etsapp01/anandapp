@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drawer="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="wrap_content"
+    android:layout_height="125dip"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlClick"
+        android:layout_width="match_parent"
+        android:layout_height="120dip"
+        android:orientation="horizontal"
+        android:layout_marginRight="45dip"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/rlimg"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgLoad"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/eve2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/rlimg"
+            android:orientation="vertical"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:maxLines="4"
+                android:text="Gujarat CM presently enrolledstudent on the lainching of 14th shala Praveshotsatv"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:text="30/june/2016"
+                android:textColor="#c5c5c5"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLeft"
+        android:layout_width="100dp"
+        android:layout_height="125dip"
+        android:layout_alignParentRight="true">
+
+        <hollowsoft.slidingdrawer.SlidingDrawer
+            android:id="@+id/drawer"
+            android:layout_width="100dp"
+            android:layout_height="125dip"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            drawer:content="@+id/content"
+            drawer:handle="@+id/handle">
+
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:padding="10dip"
+                android:src="@drawable/share" />
+
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="55dip"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgFacebok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:src="@drawable/fb" />
+
+                <ImageView
+                    android:id="@+id/imgTwt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/img1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/twt" />
+            </LinearLayout>
+        </hollowsoft.slidingdrawer.SlidingDrawer>
+    </RelativeLayout>
+
+
+</RelativeLayout>

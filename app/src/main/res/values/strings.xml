@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Anandiben Patel</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">574391292758068</string>
+
+
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Biography</item>
+        <item>Latest News</item>
+        <item>Become a Gateesheel Gujarat</item>
+        <item>Message from CM</item>
+        <item>Media Coverage</item>
+        <item>Photo of the Day</item>
+        <item>Interact with CM</item>
+        <item>Prime Initiative</item>
+        <item>Speeches/Interviews</item>
+        <item>Blog</item>
+        <item>Infographic</item>
+        <item>Social Media</item>
+    </string-array>
+    <string-array name="tab_home">
+        <item>Electronic Media</item>
+        <item>Print Media</item>
+        <!--<item>Free</item>-->
+    </string-array>
+
+    <string-array name="tab_social">
+        <item>Twitter</item>
+        <item>Facebook</item>
+        <!--<item>Free</item>-->
+    </string-array>
+</resources>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="slidingdrawer-1.5.5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.moraisigor/slidingdrawer/1.5.5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.moraisigor/slidingdrawer/1.5.5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.moraisigor/slidingdrawer/1.5.5/f212dff79b0c4b4e6a2503ef6fd1935ac334fdee/slidingdrawer-1.5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

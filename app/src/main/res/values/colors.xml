@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2e68b1</color>
+    <color name="colorPrimaryDark">#3d6188</color>
+    <color name="colorAccent">#303F9F</color>
+
+    <color name="green">#84B98B</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="primaryColor">#2E68B1</color>
+    <color name="primaryColorDark">#2E68B1</color>
+    <color name="accentColor">#2E68B1</color>
+
+    <color name="selected_text">#FFFFFF</color>
+    <color name="unselected_text">#9E9E9E</color>
+
+    <!--Old action color = #33cc90-->
+    <!--Old action font color = #fff-->
+
+    <color name="divider_green_color">#2E68B1</color>
+    <color name="actionbar_bg">#FFFFFF</color>
+    <color name="actionbar_font">#33cc90</color>
+    <color name="white_screen_background">#fff</color>
+
+    <color name="edittext_bg">#ffffff</color>
+    <color name="button_bg">#ffffff</color>
+    <color name="facebook_button_bg">#3b5998</color>
+    <color name="twitter_button_bg">#55acee</color>
+
+    <color name="edittext_hint_color">#8833cc90</color>
+    <color name="white_font_color">#fff</color>
+    <color name="black_font_color">#000000</color>
+    <color name="grey_font_color">#9E9E9E</color>
+    <color name="green_font_color">#33cc90</color>
+    <color name="logout_font_color">#FF2424</color>
+    <color name="delete_accout">#A2A2A2</color>
+    <color name="setting_font">#000408</color>
+    <color name="button_green_bg">#2E68B1</color>
+    <color name="divider_color">#9E9E9E</color>
+    <color name="player_bg">#F5F5F6</color>
+    <color name="colorHighlight">#d3d3d3</color>
+    <color name="bookmark_bg">#e7e7e7</color>
+    <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+    <color name="primary">#2E68B1</color>
+    <color name="primary_dark">#00838F</color>
+    <color name="accent">#BDBDBD</color>
+    <color name="text_color">#6D6D6D</color>
+    <color name="white">#FEFEFE</color>
+    <color name="white_off">#BDBDBD</color>
+
+    <!--DRAWER==========-->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="list_divider">#000000</color>
+    <color name="list_background_pressed">#535353</color>
+    <color name="list_background">#000000</color>
+    <color name="list_item_title">#d3d3d3</color>
+
+
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+</resources>

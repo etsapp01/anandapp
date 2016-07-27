@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="amigo.finnacle.FamilyDialog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/imgfb"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb"/>
+            <TextView
+                android:id="@+id/txtFacebook"
+                android:layout_toRightOf="@+id/imgfb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:imeActionLabel="Enter Your Name"
+                android:imeOptions="actionUnspecified"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:layout_marginLeft="5dip"
+                android:text="Share With facebook"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="#c5c5c5"></View>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/imgtwit"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twt"/>
+            <TextView
+                android:id="@+id/txtTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgtwit"
+                android:layout_marginLeft="5dip"
+                android:background="@android:color/transparent"
+                android:imeActionLabel="Date Of Birth"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Share with Twitter"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:visibility="gone"
+            android:background="#c5c5c5"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+<ImageView
+    android:layout_width="wrap_content"
+    android:id="@+id/img1"
+    android:layout_height="wrap_content"
+    android:src="@drawable/fb"/>
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_toRightOf="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:imeActionLabel="Enter Your Bank Name"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:text="Share using mail"
+                android:textColor="#000000" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="OK &amp; NEW"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="OK"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <DatePicker
+        android:id="@+id/dpResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gujaratcm.anandiben.LatestNewsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#11C8E0"
+            android:padding="10dip">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_toLeftOf="@+id/rlClear"
+                    android:background="@drawable/register_rectangle"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:hint="search..."
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlClear"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@+id/btnTempSearch"
+                    android:background="#ffffff"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/fab_add"
+                        android:tint="#A4A4A4" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/btnTempSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="3dp"
+                    android:background="#628DA2"
+                    android:text="Search"
+                    android:textColor="#ffffff" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <gujaratcm.anandiben.swiperefresh.SwipyRefreshLayout
+            android:id="@+id/swipeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:direction="both">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </gujaratcm.anandiben.swiperefresh.SwipyRefreshLayout>
+
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#00000000"
+        android:visibility="gone"
+        fab:menu_colorNormal="#84B98B"
+        fab:menu_colorPressed="#84B98B"
+        fab:menu_colorRipple="#84B98B"
+        fab:menu_icon="@mipmap/share">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/accion_edit"
+            style="@style/MenuButtonsSmall.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/twt" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/accion_delete"
+            style="@style/MenuButtonsSmall.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gplus"
+            android:visibility="gone" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/accion_delete1"
+            style="@style/MenuButtonsSmall.Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fb" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

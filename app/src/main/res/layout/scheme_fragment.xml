@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <gujaratcm.anandiben.swiperefresh.SwipyRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:direction="top">
+
+        <ListView
+            android:id="@+id/lstSchems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </gujaratcm.anandiben.swiperefresh.SwipyRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:gravity="bottom|right">
+
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:background="#00000000"
+            fab:menu_colorNormal="#84B98B"
+            fab:menu_colorPressed="#84B98B"
+            fab:menu_colorRipple="#84B98B"
+            fab:menu_icon="@mipmap/share">
+
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/accion_edit"
+                style="@style/MenuButtonsSmall.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/twt" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/accion_delete"
+                style="@style/MenuButtonsSmall.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gplus"
+                android:visibility="gone" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/accion_delete1"
+                style="@style/MenuButtonsSmall.Green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fb" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+</RelativeLayout>

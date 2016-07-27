@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:drawer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rlLeft"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgLoad"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="#cccccc"
+            android:padding="2dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/eve2" />
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/imgLoad"
+            android:padding="5dip">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:maxLines="2"
+                android:text="Gujarat CM presently enrolledstudent on the lainching of 14th shala Praveshotsatv"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:text="30/june/2016"
+                android:textColor="#c5c5c5"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLeft"
+        android:layout_width="90dp"
+        android:layout_height="70dip"
+        android:layout_alignParentRight="true">
+
+        <hollowsoft.slidingdrawer.SlidingDrawer
+            android:id="@+id/drawer"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            drawer:content="@+id/content"
+            drawer:handle="@+id/handle">
+
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:gravity="center"
+                android:padding="10dip"
+                android:src="@drawable/share" />
+
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="45dip"
+                android:layout_height="match_parent"
+                android:background="#eeeeee"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgFacebok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:src="@drawable/fb" />
+
+                <ImageView
+                    android:id="@+id/imgTwt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/img1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:src="@drawable/twt" />
+            </LinearLayout>
+        </hollowsoft.slidingdrawer.SlidingDrawer>
+    </RelativeLayout>
+
+</RelativeLayout>
